@@ -16,6 +16,28 @@ public class SDAHashSet<E> {
         }
     }
 
+    public boolean remove(E e) {
+        if (elements.contains(e)) {
+            elements.remove(e);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int size() {
+        return elements.size();
+    }
+
+    public boolean contains(E e) {
+        return elements.contains(e);
+    }
+
+    public void clear() {
+        elements.clear();
+    }
+
+
     public boolean addWorstVersion(E e) {
         boolean isValid = true;
         for (E element : elements) {
