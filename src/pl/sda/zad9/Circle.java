@@ -1,6 +1,6 @@
 package pl.sda.zad9;
 
-public class Circle {
+public class Circle implements Movable {
 
     private Point2D center;
     private Point2D point;
@@ -23,5 +23,17 @@ public class Circle {
         return Math.PI * Math.pow(getRadius(), 2);
     }
 
+    @Override
+    public void move(MoveDirection moveDirection) {
+        center.move(moveDirection);
+        point.move(moveDirection);
+    }
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "center=" + center +
+                ", point=" + point +
+                '}';
+    }
 }

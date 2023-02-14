@@ -9,8 +9,18 @@ public class Main {
 
         Circle circle = new Circle(center, point);
 
+        System.out.println("Pierwotny obiekt Circle");
         System.out.println(circle.getRadius());
         System.out.println(circle.getPerimeter());
         System.out.println(circle.getArea());
+
+        MoveDirection moveDirection = new MoveDirection(2, 5);
+        circle.move(moveDirection);
+
+        System.out.println("Obiekt Circle po metodzie movie()");
+        System.out.println(circle.getRadius());
+        System.out.println(circle.getPerimeter());
+        System.out.println(circle.getArea());
+        System.out.println(circle);
     }
 }
