@@ -1,6 +1,6 @@
 package pl.sda.zad9;
 
-public class Circle implements Movable {
+public class Circle implements Movable, Resizable {
 
     private Point2D center;
     private Point2D point;
@@ -35,5 +35,14 @@ public class Circle implements Movable {
                 "center=" + center +
                 ", point=" + point +
                 '}';
+    }
+
+    @Override
+    public void resize(double doubleFactor) {
+        double resizedPointX = center.getX() + ((point.getX() - center.getX()) * doubleFactor);
+        double resizedPointY = center.getY() + ((point.getY() - center.getY()) * doubleFactor);
+
+        point.setX(resizedPointX);
+        point.setY(resizedPointY);
     }
 }
