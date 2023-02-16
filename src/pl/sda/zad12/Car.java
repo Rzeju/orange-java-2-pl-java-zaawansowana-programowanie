@@ -12,6 +12,10 @@ public class Car {
     private List<Manufacturer> manufacturers;
     private EngineType engineType;
 
+    public Car() {
+
+    }
+
     public Car(String name, String model, int price, int productionYear, List<Manufacturer> manufacturers, EngineType engineType) {
         this.name = name;
         this.model = model;
@@ -80,5 +84,17 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(name, model, price, productionYear, manufacturers, engineType);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", productionYear=" + productionYear +
+                ", manufacturers=" + manufacturers +
+                ", engineType=" + engineType +
+                "}\n";
     }
 }

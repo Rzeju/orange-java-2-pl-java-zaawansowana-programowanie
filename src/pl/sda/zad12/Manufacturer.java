@@ -50,4 +50,13 @@ public class Manufacturer {
     public int hashCode() {
         return Objects.hash(name, establishedYear, country);
     }
+
+    @Override
+    public String toString() {
+        return "Manufacturer{" +
+                "name='" + name + '\'' +
+                ", establishedYear=" + establishedYear +
+                ", country='" + country + '\'' +
+                '}';
+    }
 }
