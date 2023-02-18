@@ -79,8 +79,6 @@ public class NumberUtils {
         return result;
     }
 
-
-
     public static List<Integer> getRandom100_000() {
         List<Integer> result = new ArrayList<>();
         Random random = new Random();
@@ -107,7 +105,7 @@ public class NumberUtils {
         return occurrences;
     }
 
-    public static Map<Integer, Integer> countNumberOfOccurrencesEasy(List<Integer> numbers) {
+    private static Map<Integer, Integer> countNumberOfOccurrencesEasy(List<Integer> numbers) {
         Map<Integer, Integer> occurrences = new HashMap<>();
 
         for (Integer i : numbers) {
