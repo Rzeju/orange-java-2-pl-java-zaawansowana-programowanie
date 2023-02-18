@@ -19,6 +19,18 @@ public class Main {
         System.out.println(hexagon.calculatePerimeter());
         System.out.println(hexagon.calculateArea());
 
+        System.out.println("QUBE");
+        Qube qube = new Qube(4);
+        System.out.println(qube.calculatePerimeter());
+        System.out.println(qube.calculateArea());
+        System.out.println(qube.calculateVolume());
+
+        System.out.println("CONE");
+        Cone cone = new Cone(3, 5, 4);
+        System.out.println(cone.calculatePerimeter());
+        System.out.println(cone.calculateArea());
+        System.out.println(cone.calculateVolume());
+
 
         //TRÓJKĄT DLA NIEPOPRAWNYCH DANYCH
         //OBIEKT ZOSTANIE UTWORZONY NATOMIAST JEGO BOKI BEDE MIAL WARTOŚCI DOMYŚLNE
