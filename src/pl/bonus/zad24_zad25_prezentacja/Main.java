@@ -2,7 +2,7 @@ package pl.bonus.zad24_zad25_prezentacja;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BasketFullException, BasketEmptyException {
 
         Basket basket = new Basket();
 

@@ -8,7 +8,7 @@ public class Basket {
 
     }
 
-    public void addToBasket(String element) {
+    public void addToBasket(String element) throws BasketFullException {
         isFull();
         for (int i = 0; i < basket.length; i++) {
             if (basket[i] == null) {
@@ -18,7 +18,7 @@ public class Basket {
         }
     }
 
-    public void removeFromBasket() {
+    public void removeFromBasket() throws BasketEmptyException {
         isEmpty();
         for (int i = 0; i < basket.length; i++) {
             if (basket[i] == null) {
