@@ -39,4 +39,9 @@ public class Laptop extends Computer {
                 "batteryLevel=" + batteryLevel +
                 "} " + super.toString();
     }
+
+    @Override
+    public void run() {
+        System.out.println("Laptop is working " + this);
+    }
 }
