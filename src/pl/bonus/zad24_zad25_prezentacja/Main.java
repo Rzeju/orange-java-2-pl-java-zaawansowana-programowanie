@@ -6,7 +6,6 @@ public class Main {
 
         Basket basket = new Basket();
 
-
         basket.addToBasket("element1");
         basket.addToBasket("element2");
         basket.addToBasket("element3");
